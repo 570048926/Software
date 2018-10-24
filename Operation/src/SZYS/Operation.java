@@ -165,8 +165,10 @@ public class Operation extends JFrame{
         Timer timer = new Timer();// 实例化Timer类
         timer.schedule(new TimerTask() {
             public void run() {
+                nameTest3.setFont(new Font("宋体", Font.PLAIN, 20));
+                nameTest3.setText("你答题已经超过120秒！");
             }
-        }, 50000);// 这里百毫秒
+        }, 120000);// 这里百毫秒
 
 
         pan5.add(btnStart1);
